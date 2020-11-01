@@ -1,0 +1,30 @@
+
+<div style="text-align: center ;font-size: 18px;padding: 1px;" >
+    <h2 >Project Information</h2> 
+    
+    <hr/>
+    <div *ngIf="project">
+      <div>
+        <label><b> Project ID: </b></label> {{project.projectNo}}
+      </div>
+      <div>
+        <label><b>Description: </b></label> {{project.description}}
+      </div>
+      
+      <div>
+        <label><b>Start Date: </b></label> {{project.startDate}}
+      </div>
+
+      <div>
+        <label><b>End Date: </b></label> {{project.endDate}}
+      </div>
+
+    </div>
+    
+    <br>
+    <br>
+    <button type="button" class="btn btn-primary"(click)="gotolist()" >Back</button>
+    </div>
+    <br>
+    <br>
+    <br>

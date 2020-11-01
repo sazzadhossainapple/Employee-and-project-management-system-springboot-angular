@@ -1,0 +1,45 @@
+<div class="container" style="max-width: 600px;">
+    <h2>Update Employee</h2>
+    <form #adduserform="ngForm" (ngSubmit)="updateEmployeeformsubmit()">
+
+        <div class="form-group">
+            <label for="employeeId">Employee Id:</label>
+            <input type="text" class="form-control" required [(ngModel)]="employees.employeeId" name="employeeId" disabled>
+        </div>
+        <div class="form-group">
+            <label for="employeeName">Name:</label>
+            <input type="text" class="form-control" required [(ngModel)]="employees.employeeName" name="employeeName">
+        </div>
+
+        <div class="form-group">
+            <label for="job">Job:</label>
+            <input type="text" class="form-control" required [(ngModel)]="employees.job" name="job" disabled>
+        </div>
+
+        <div class="form-group">
+            <label for="boss">Group Manager:</label>
+            <input type="text" class="form-control" required [(ngModel)]="employees.boss" name="boss" disabled>
+        </div>
+
+
+
+        <div class="form-group">
+            <label for="hireDate">Hire Date:</label>
+            <input type="text" class="form-control" required [(ngModel)]="employees.hireDate"
+                name="hireDate" disabled>
+        </div>
+
+
+        <div class="form-group">
+            <label for="salary">Salary:</label>
+            <input type="text" class="form-control" required [(ngModel)]="employees.salary" name="salary" disabled>
+        </div>
+
+        <button type="submit" class="btn btn-success">Upadte</button>&nbsp;&nbsp;
+        <button type="button" class="btn btn-primary"(click)="gotolist()" >Back</button>
+
+        <!---->
+
+    </form>
+
+</div>

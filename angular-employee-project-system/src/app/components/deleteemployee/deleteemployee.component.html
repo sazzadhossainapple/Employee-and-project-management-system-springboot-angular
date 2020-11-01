@@ -1,0 +1,33 @@
+
+<div style="text-align: center ;font-size: 18px;padding: 1px; background-color: crimson; color: white;" >
+<h2 >Employee Details</h2> 
+
+<hr/>
+<div *ngIf="employees">
+  <div>
+    <label><b>ID: </b></label> {{employees.employeeId}}
+  </div>
+  <div>
+    <label><b>Name: </b></label> {{employees.employeeName}}
+  </div>
+  <div>
+    <label><b>Job: </b></label> {{employees.job}}
+    <div>
+        <label><b>Group Manager: </b></label> {{employees.boss}}
+      </div>
+      <div>
+        <label><b>Hire Date: </b></label> {{employees.hireDate}}
+      </div>
+      <div>
+        <label><b>Salary: </b></label> {{employees.salary | currency:'BDT' }}
+      </div>
+  </div>  
+</div>
+
+<br>
+<br>
+<button type="button" class="btn btn-primary"(click)="gotolist()" >Back</button>
+</div>
+<br>
+<br>
+<br>

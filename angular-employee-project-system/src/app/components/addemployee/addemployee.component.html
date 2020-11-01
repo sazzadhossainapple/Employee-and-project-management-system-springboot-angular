@@ -1,0 +1,41 @@
+<div class="container" style="max-width: 600px;">
+    <h2>Add new employee</h2>
+    <form #adduserform="ngForm" (ngSubmit)="addEmployeeformsubmit()">
+
+        <div class="form-group">
+            <label for="employeeName">Name:</label>
+            <input type="text" class="form-control" required [(ngModel)]="employees.employeeName" name="employeeName">
+        </div>
+
+        <div class="form-group">
+            <label for="job">Job:</label>
+            <input type="text" class="form-control" required [(ngModel)]="employees.job" name="job">
+        </div>
+
+        <div class="form-group">
+            <label for="boss">Group Manager:</label>
+            <input type="text" class="form-control" required [(ngModel)]="employees.boss" name="boss">
+        </div>
+
+
+
+        <div class="form-group">
+            <label for="hireDate">Hire Date:</label>
+            <input type="text" class="form-control" required [(ngModel)]="employees.hireDate"
+                name="hireDate">
+        </div>
+
+
+        <div class="form-group">
+            <label for="salary">Salary:</label>
+            <input type="text" class="form-control" required [(ngModel)]="employees.salary" name="salary">
+        </div>
+
+        <button type="submit" class="btn btn-success">Save</button>&nbsp;&nbsp;
+        <button type="button" class="btn btn-primary"(click)="gotolist()" >Back</button>
+
+        <!---->
+
+    </form>
+
+</div>
